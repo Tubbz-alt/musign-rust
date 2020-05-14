@@ -1,6 +1,6 @@
-# Blockchain Commons `$projectname`
+# Blockchain Commons Multisign Tool in Rust
 
-**`$ProjectDescription`** is …
+`multisig` is a CLI tool written supporting both single and multisig signatures of arbitrary data leveraging [BIP-Schnorr](https://github.com/sipa/bips/blob/bip-schnorr/bip-schnorr.mediawiki) and [Musig](https://eprint.iacr.org/2018/068).
 
 ## Additional Information
 
@@ -10,7 +10,7 @@ The following files contain…
 
 ## Status - Late Alpha
 
-` $projectname`  is currently under active development and in the late alpha testing phase. It should not be used for production tasks until it has had further testing and auditing.
+Multisign Tool in Rust  is currently under active development and in the late alpha testing phase. It should not be used for production tasks until it has had further testing and auditing.
 
 ## Origin, Authors, Copyright & Licenses
 
@@ -26,9 +26,7 @@ This table below also establishes provenance (repository of origin, permalink, a
 
 ### Dependencies
 
-To build  `$projectname` you'll need to use the following tools:
-
-- autotools - Gnu Build System from Free Software Foundation ([intro](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html)).
+`multisig` requires Bitcoin-Core's well proven cryptographic library [bitcoin-core/secp256k1](https://github.com/bitcoin-core/secp256k1). However, until the BIP-Schnorr functionality in [PR #558](https://github.com/bitcoin-core/secp256k1/pull/558) has been merged, we are using [BlockchainCommons/secp256k1-schnorrsig](https://github.com/BlockchainCommons/secp256k1-schnorrsig). The secp256k1 library is licensed under the [MIT License](https://github.com/bitcoin-core/secp256k1/blob/master/COPYING).
 
 ### Derived from…
 
@@ -44,9 +42,9 @@ These are other projects that work with or leverage `$projectname`:
 
 ## Financial Support
 
-`$projectname` is a project of [Blockchain Commons](https://www.blockchaincommons.com/). We are proudly a "not-for-profit" social benefit corporation committed to open source & open development. Our work is funded entirely by donations and collaborative partnerships with people like you. Every contribution will be spent on building open tools, technologies, and techniques that sustain and advance blockchain and internet security infrastructure and promote an open web.
+Multisign Tool in Rust is a project of [Blockchain Commons](https://www.blockchaincommons.com/). We are proudly a "not-for-profit" social benefit corporation committed to open source & open development. Our work is funded entirely by donations and collaborative partnerships with people like you. Every contribution will be spent on building open tools, technologies, and techniques that sustain and advance blockchain and internet security infrastructure and promote an open web.
 
-To financially support further development of `$projectname` and other projects, please consider becoming a Patron of Blockchain Commons through ongoing monthly patronage as a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons). You can also support Blockchain Commons with bitcoins at our [BTCPay Server](https://btcpay.blockchaincommons.com/).
+To financially support further development of Multisign Tool in Rust and other projects, please consider becoming a Patron of Blockchain Commons through ongoing monthly patronage as a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons). You can also support Blockchain Commons with bitcoins at our [BTCPay Server](https://btcpay.blockchaincommons.com/).
 
 ## Contributing
 
